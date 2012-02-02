@@ -1,0 +1,14 @@
+{
+    "name": "scoreboard"
+  , "version": "0.0.1"
+  , "description": "Redis leaderboard for node.js"
+  , "keywords": ["redis", "leaderboard", "rank"]
+  , "author": "Edward Chan <edward@knowsee.com>"
+  , "dependencies": {
+    "redis": ">= 0.6.6"
+  }
+  , "devDependencies": {
+  }
+  , "main": "index"
+  , "engines": { "node": ">= 0.4.0 < 0.7.0"}
+}
