@@ -26,7 +26,7 @@ scores.index('aliens', 200, 'nancy');
 ```
 
 ### Leaderboard
- To perform a query against the scoreboard to find the leaders, you simple use 'Score#leader' with a list of keys, and invoke run with a callback to fetch the results
+ To perform a query against the scoreboard to find the leaders, you simple use `Score#leader` with a list of keys, and invoke `run` with a callback to fetch the results
 
 #### Single scoreboard
 
@@ -38,7 +38,8 @@ scores.leaders({keys:['monsters']}).run(function(err, leaderboard)) {
 });
 ```
 
- Results:
+ Results
+
 ```js
 ['edward', 'nancy']
 ```
@@ -54,6 +55,7 @@ scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
 ```
 
  Results:
+
 ```js
 ['nancy', 'edward']
 ```
@@ -71,6 +73,7 @@ scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012')
 ``` 
 
  Results:
+
 ```js
 ['nancy', 'edward']
 ```
