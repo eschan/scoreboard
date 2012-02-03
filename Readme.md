@@ -1,6 +1,12 @@
 # scoreboard
 
-  scoreboard is a light weight leaderboard for node.js.  It can be used keep score and ranks between multiple objects and scoring types. It is backed by Redis and sorted sets. 
+  scoreboard is a light weight leaderboard for node.js.  It can be used keep score and ranks between multiple objects and scoring types. It is backed by Redis and sorted sets.
+
+## Where to use
+* Trending Charts
+* Realtime Charts
+* Historical Charts
+* Game mechanics
 
 ## Installation
 
@@ -67,9 +73,10 @@ scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
 This will return the leaderboard for `monsters` and `aliens` between `1/1/2012` and `1/31/2012`:
 
 ```js
-scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } }).run(function(err, leaderboard)) {
-  console.log(leaderboard);
-});
+scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } })
+  .run(function(err, leaderboard)) {
+    console.log(leaderboard);
+  });
 ``` 
 
  Results:
@@ -77,6 +84,22 @@ scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012')
 ```js
 ['nancy', 'edward']
 ```
+
+#### Pagination
+
+ Paginations is super easy with scoreboard.  All you need is `skip` and `limit`
+
+ This will return the top 0 - 100 of the time series leaderboard
+
+```js
+scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } })
+  .skip(0)
+  .limit(100)
+  .run(function(err, leaderboard)) {
+    console.log(leaderboard);
+  });
+``` 
+
 
 ## License 
 
