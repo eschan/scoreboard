@@ -1,6 +1,6 @@
 {
     "name": "scoreboard"
-  , "version": "0.0.3"
+  , "version": "0.0.4"
   , "description": "Redis leaderboard for node.js"
   , "keywords": ["redis", "leaderboard", "rank"]
   , "author": "Edward Chan <edward@knowsee.com>"
