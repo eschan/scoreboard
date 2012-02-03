@@ -21,6 +21,15 @@ var Score = scoreboard.Score;
 var scores = new Score();
 ````
 
+### Redis Connection Settings
+```javascript
+scoreboard.redis.createClient = function() {
+  var client = redis.createClient(1234, '192.168.100.1');
+  client.auth('somethingsecret');
+  return client;
+};
+```
+
 ### Indexing
  Awarding point to an object is simple. Scoreboard supports multiple leaderboards, and is are partitioned by different a `key`
 
