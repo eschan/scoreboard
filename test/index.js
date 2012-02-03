@@ -38,6 +38,15 @@ describe('scoreboard', function() {
 			keys.should.include('20120202_bar');
     })
   })
+
+  describe('#getUniqueKey', function() {
+    it('test multiple date range key generation', function(){
+			var key = scoreboard.genUniqueKey(['foo', 'bar']);
+			console.log(key);
+			key.should.have.length(22);
+			key.should.include('multi:');
+    })
+  })
 })
 
 describe('score', function(){
@@ -71,10 +80,10 @@ describe('score', function(){
   })
 
   describe('#leader', function() {
-    it('test mult index and get value in range', function(done) {
+    it('test multi index and get value in range', function(done) {
 			score.index('foo', 1, 'bar', function(err) {
 				score.index('poo', 1, 'par', function(err) {
-					score.leader({ keys: ['foo', 'poo'], date: { $start: new Date('1/31/2012'), $end: new Date('2/02/2012') } })
+					score.leader({ keys: ['foo', 'poo'], date: { $start: new Date('1/31/2012'), $end: new Date() } })
 					.skip(0).limit(-1)
 					.run(function(err, response) {
 						response.should.include('bar');
