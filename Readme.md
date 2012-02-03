@@ -37,6 +37,7 @@ scores.leaders({keys:['monsters']}).run(function(err, leaderboard)) {
   console.log(leaderboard);
 });
 ```
+
  Results:
 ```js
 ['edward', 'nancy']
@@ -51,12 +52,13 @@ scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
   console.log(leaderboard);
 });
 ```
+
  Results:
 ```js
 ['nancy', 'edward']
 ```
 
-#### Time series
+#### Time series plus multiple scoreboards
 
  Score are stored in Redis on two types of buckets, `overall` and `days`.  Obviously the `overall` buckets are used to track scores thoughout the entire life of the scoreboard.  But `day` buckets allow for more percise queries. 
  
@@ -67,6 +69,7 @@ scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012')
   console.log(leaderboard);
 });
 ``` 
+
  Results:
 ```js
 ['nancy', 'edward']
