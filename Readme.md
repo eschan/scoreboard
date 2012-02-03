@@ -61,7 +61,7 @@ scores.leaders({keys:['monsters']}).run(function(err, leaderboard)) {
 
 #### Multiple scoreboards
 
- Find leader in both `monsters` and `aliens`
+ Find leader in both `monsters` and `aliens`.  The scores across the two sets are totalled together
 
 ```js
 scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
