@@ -8,8 +8,6 @@
 
 ## Example
 
-Using scoreboard is very simple.  First you must create an instance of `Score`.  
-
 ### Setup
 ```js    
 var scoreboard = require('scoreboard')
@@ -30,34 +28,31 @@ scores.index('aliens', 200, 'nancy');
 ### Leaderboard
  To perform a query against the scoreboard to find the leaders, you simple use 'Score#leader' with a list of keys, and invoke run with a callback to fetch the results
 
-#### Find leader in just `monsters`
- 
- You can just search a single scoreboard
+#### Single scoreboard
+
+ Find leader in just `monsters`
 
 ```js
 scores.leaders({keys:['monsters']}).run(function(err, leaderboard)) {
   console.log(leaderboard);
 });
-
 ```
-
  Results:
-```
+```js
 ['edward', 'nancy']
 ```
 
-#### Find leader in both `monsters` and `aliens`
+#### Multiple scoreboards
 
- You cand search across multiple scoreboards
+ Find leader in both `monsters` and `aliens`
 
 ```js
 scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
   console.log(leaderboard);
 });
 ```
-
  Results:
-```
+```js
 ['nancy', 'edward']
 ```
 
@@ -66,12 +61,16 @@ scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
  Score are stored in Redis on two types of buckets, `overall` and `days`.  Obviously the `overall` buckets are used to track scores thoughout the entire life of the scoreboard.  But `day` buckets allow for more percise queries. 
  
 This will return the leaderboard for `monsters` and `aliens` between `1/1/2012` and `1/31/2012`:
+
 ```js
 scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } }).run(function(err, leaderboard)) {
   console.log(leaderboard);
 });
-
 ``` 
+ Results:
+```js
+['nancy', 'edward']
+```
 
 ## License 
 
