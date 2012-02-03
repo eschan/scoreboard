@@ -1,0 +1,224 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/usr/local/bin/npm',
+verbose cli   'publish',
+verbose cli   'https://github.com/eschan/scoreboard/tarball/master' ]
+info using npm@1.0.106
+info using node@v0.4.7
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/echan/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ 'https://github.com/eschan/scoreboard/tarball/master' ]
+verbose cache add [ 'https://github.com/eschan/scoreboard/tarball/master',
+verbose cache add   null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'https://github.com/eschan/scoreboard/tarball/master',
+silly cache add: name, spec, args   [ 'https://github.com/eschan/scoreboard/tarball/master',
+silly cache add: name, spec, args     null ] ]
+verbose parsed url { protocol: 'https:',
+verbose parsed url   slashes: true,
+verbose parsed url   host: 'github.com',
+verbose parsed url   hostname: 'github.com',
+verbose parsed url   href: 'https://github.com/eschan/scoreboard/tarball/master',
+verbose parsed url   pathname: '/eschan/scoreboard/tarball/master' }
+verbose addRemoteTarball [ 'https://github.com/eschan/scoreboard/tarball/master',
+verbose addRemoteTarball   null ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922'
+verbose mkdir done: /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922 755
+info fetch https://github.com/eschan/scoreboard/tarball/master
+verbose fetch to /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm'
+verbose mkdir done: /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/tmp.tgz' ],
+silly spawning   '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm' ]
+silly tar err x eschan-scoreboard-b370508/
+silly tar err x eschan-scoreboard-b370508/.gitignore
+silly tar err x eschan-scoreboard-b370508/Makefile
+silly tar err x eschan-scoreboard-b370508/index.js
+silly tar err x eschan-scoreboard-b370508/lib/
+silly tar err x eschan-scoreboard-b370508/lib/redis.js
+silly tar err x eschan-scoreboard-b370508/lib/scoreboard.js
+silly tar err x eschan-scoreboard-b370508/package.json
+silly tar err x eschan-scoreboard-b370508/test/
+silly tar err x eschan-scoreboard-b370508/test/index.js
+silly tar exit 0
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/.gitignore
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/index.js
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/Makefile
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/package.json
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/lib
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/lib/redis.js
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/lib/scoreboard.js
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/test
+silly asyncMap in gTP /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508/test/index.js
+silly chmod eschan-scoreboard-b370508 755
+silly chmod .gitignore 644
+silly chmod index.js 644
+silly chmod Makefile 644
+silly chmod package.json 644
+silly chmod lib 755
+silly chmod redis.js 644
+silly chmod scoreboard.js 644
+silly chmod test 755
+silly chmod index.js 644
+verbose gunzed /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508
+verbose rm'ed /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package
+verbose renamed [ '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/___package.npm/eschan-scoreboard-b370508',
+verbose renamed   '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package' ]
+silly testEngine { name: 'scoreboard',
+silly testEngine   version: '0.0.2',
+silly testEngine   description: 'Redis leaderboard for node.js',
+silly testEngine   keywords: [ 'redis', 'leaderboard', 'rank' ],
+silly testEngine   author: { name: 'Edward Chan', email: 'edward@knowsee.com' },
+silly testEngine   dependencies: 
+silly testEngine    { redis: '>= 0.7.1',
+silly testEngine      moment: '>= 1.3.0',
+silly testEngine      async: '0.1.15' },
+silly testEngine   devDependencies: { mocha: '*', should: '*' },
+silly testEngine   main: 'index',
+silly testEngine   engines: { node: '>= 0.4.0 < 0.7.0' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/eschan/scoreboard.git' },
+silly testEngine   _npmUser: { name: 'eschan', email: 'wado03@hotmail.com' },
+silly testEngine   _id: 'scoreboard@0.0.2',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package' }
+verbose caching /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package/package.json
+verbose loadDefaults scoreboard@0.0.2
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package/package.json
+verbose pack /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package /Users/echan/.npm/scoreboard/0.0.2/package.tgz
+silly makeList /var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents/package
+verbose mkdir'ed /Users/echan/.npm/scoreboard/0.0.2
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/7t/211jx2bd2m90hh1k8xzp2cwh0000gn/T/npm-1328241333307/1328241333307-0.563447498017922/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/echan/.npm/scoreboard/0.0.2/___package.npm'
+verbose mkdir done: /Users/echan/.npm/scoreboard/0.0.2/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/echan/.npm/scoreboard/0.0.2/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/echan/.npm/scoreboard/0.0.2/package.tgz' ],
+silly spawning   '/Users/echan/.npm/scoreboard/0.0.2/___package.npm' ]
+silly tar err x package/index.js
+silly tar err x package/.gitignore
+silly tar err x package/package.json
+silly tar err x package/Makefile
+silly tar err x package/lib/redis.js
+silly tar err x package/lib/scoreboard.js
+silly tar err x package/test/index.js
+silly tar exit 0
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/index.js
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/Makefile
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/package.json
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/lib
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/lib/redis.js
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/lib/scoreboard.js
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/test
+silly asyncMap in gTP /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package/test/index.js
+verbose gunzed /Users/echan/.npm/scoreboard/0.0.2/___package.npm/package
+verbose rm'ed /Users/echan/.npm/scoreboard/0.0.2/package
+verbose renamed [ '/Users/echan/.npm/scoreboard/0.0.2/___package.npm/package',
+verbose renamed   '/Users/echan/.npm/scoreboard/0.0.2/package' ]
+silly testEngine { name: 'scoreboard',
+silly testEngine   version: '0.0.2',
+silly testEngine   description: 'Redis leaderboard for node.js',
+silly testEngine   keywords: [ 'redis', 'leaderboard', 'rank' ],
+silly testEngine   author: { name: 'Edward Chan', email: 'edward@knowsee.com' },
+silly testEngine   dependencies: 
+silly testEngine    { redis: '>= 0.7.1',
+silly testEngine      moment: '>= 1.3.0',
+silly testEngine      async: '0.1.15' },
+silly testEngine   devDependencies: { mocha: '*', should: '*' },
+silly testEngine   main: 'index',
+silly testEngine   engines: { node: '>= 0.4.0 < 0.7.0' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/eschan/scoreboard.git' },
+silly testEngine   _npmUser: { name: 'eschan', email: 'wado03@hotmail.com' },
+silly testEngine   _id: 'scoreboard@0.0.2',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '14709d15c91d4a65f05e9621779e8d1c0348374c',
+silly testEngine      tarball: 'http://registry.npmjs.org/scoreboard/-/scoreboard-0.0.2.tgz' },
+silly testEngine   scripts: {} }
+verbose caching /Users/echan/.npm/scoreboard/0.0.2/package/package.json
+verbose loadDefaults scoreboard@0.0.2
+silly updated sha bytes 10240
+info shasum 14709d15c91d4a65f05e9621779e8d1c0348374c
+info shasum /Users/echan/.npm/scoreboard/0.0.2/package.tgz
+verbose from cache /Users/echan/.npm/scoreboard/0.0.2/package/package.json
+verbose chmod /Users/echan/.npm/scoreboard/0.0.2/package.tgz 644
+verbose chown [ '/Users/echan/.npm/scoreboard/0.0.2/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'scoreboard',
+silly publish   version: '0.0.2',
+silly publish   description: 'Redis leaderboard for node.js',
+silly publish   keywords: [ 'redis', 'leaderboard', 'rank' ],
+silly publish   author: { name: 'Edward Chan', email: 'edward@knowsee.com' },
+silly publish   dependencies: 
+silly publish    { redis: '>= 0.7.1',
+silly publish      moment: '>= 1.3.0',
+silly publish      async: '0.1.15' },
+silly publish   devDependencies: { mocha: '*', should: '*' },
+silly publish   main: 'index',
+silly publish   engines: { node: '>= 0.4.0 < 0.7.0' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/eschan/scoreboard.git' },
+silly publish   _npmUser: { name: 'eschan', email: 'wado03@hotmail.com' },
+silly publish   _id: 'scoreboard@0.0.2',
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.106',
+silly publish   _nodeVersion: 'v0.4.7',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '14709d15c91d4a65f05e9621779e8d1c0348374c',
+silly publish      tarball: 'http://registry.npmjs.org/scoreboard/-/scoreboard-0.0.2.tgz' },
+silly publish   scripts: {} }
+info prepublish scoreboard@0.0.2
+verbose PUT scoreboard
+verbose raw, before any munging scoreboard
+verbose url resolving [ 'http://registry.npmjs.org/', './scoreboard' ]
+verbose url resolved http://registry.npmjs.org/scoreboard
+verbose GET scoreboard
+verbose raw, before any munging scoreboard
+verbose url resolving [ 'http://registry.npmjs.org/', './scoreboard' ]
+verbose url resolved http://registry.npmjs.org/scoreboard
+info Already published scoreboard@0.0.2
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'scoreboard@0.0.2'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "publish" "https://github.com/eschan/scoreboard/tarball/master"
+ERR! cwd /Users/echan/Development/scoreboard
+ERR! node -v v0.4.7
+ERR! npm -v 1.0.106
+ERR! code EPUBLISHCONFLICT
+verbose exit [ 1, true ]
