@@ -48,7 +48,7 @@ scores.index('aliens', 200, 'nancy');
  Find leader in just `monsters`
 
 ```js
-scores.leaders({keys:['monsters']}).run(function(err, leaderboard)) {
+scores.leader({keys:['monsters']}).run(function(err, leaderboard) {
   console.log(leaderboard);
 });
 ```
