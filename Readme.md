@@ -64,7 +64,7 @@ scores.leader({keys:['monsters']}).run(function(err, leaderboard) {
  Find leader in both `monsters` and `aliens`.  The scores across the two sets are totalled together
 
 ```js
-scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
+scores.leader({keys:['monsters','aliens']}).run(function(err, leaderboard) {
   console.log(leaderboard);
 });
 ```
@@ -82,10 +82,9 @@ scores.leaders({keys:['monsters','aliens']}).run(function(err, leaderboard)) {
 This will return the leaderboard for `monsters` and `aliens` between `1/1/2012` and `1/31/2012`:
 
 ```js
-scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } })
-  .run(function(err, leaderboard)) {
+scores.leader({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } }).run(function(err, leaderboard) {
     console.log(leaderboard);
-  });
+});
 ``` 
 
  Results:
@@ -101,10 +100,10 @@ scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012')
  This will return the top 0 - 100 of the time series leaderboard
 
 ```js
-scores.leaders({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } })
+scores.leader({ keys:['monsters','aliens'], date: {$start: new Date('1/1/2012'), $end: new Date('1/31/2012') } })
   .skip(0)
   .limit(100)
-  .run(function(err, leaderboard)) {
+  .run(function(err, leaderboard) {
     console.log(leaderboard);
   });
 ``` 
